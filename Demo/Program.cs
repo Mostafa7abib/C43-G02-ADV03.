@@ -17,17 +17,32 @@
             #endregion
 
             #region Stack
-            Stack<int> Numbers = new Stack<int>();
-            Numbers.Push(1);
-            Numbers.Push(2);
-            Numbers.Push(3);
-            foreach (int number in Numbers)
-            {
-                Console.WriteLine(number);
-            }
-            Numbers.Pop();
-            Console.WriteLine( Numbers.TryPop(out int result));
-            Console.WriteLine("After Pop");
+            //Stack<int> Numbers = new Stack<int>();
+            //Numbers.Push(1);
+            //Numbers.Push(2);
+            //Numbers.Push(3);
+            //foreach (int number in Numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+            //Numbers.Pop();
+            //Console.WriteLine( Numbers.TryPop(out int result));
+            //Console.WriteLine("After Pop");
+            //foreach (int number in Numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+            #endregion
+
+            #region Queue
+            Queue<int> Numbers = new Queue<int>();
+            Numbers.Enqueue(1);
+            Numbers.Enqueue(2);
+            Numbers.Enqueue(3);
+            Numbers.Dequeue();
+            Numbers.Dequeue();  
+            Numbers.Dequeue();
+            Console.WriteLine(Numbers.TryDequeue(out int result));
             foreach (int number in Numbers)
             {
                 Console.WriteLine(number);
