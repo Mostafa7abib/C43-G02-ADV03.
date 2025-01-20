@@ -88,13 +88,25 @@ namespace Demo
             #endregion
 
             #region SortedList (BST)
-            SortedList<string, int> Note = new SortedList<string, int>();
-            Note.Add("Mostafa", 456);
-            Note.Add("omar", 789);
-            Note.Add("Ahmed", 123);
-            foreach (var item in Note)
+            //SortedList<string, int> Note = new SortedList<string, int>();
+            //Note.Add("Mostafa", 456);
+            //Note.Add("omar", 789);
+            //Note.Add("Ahmed", 123);
+            //foreach (var item in Note)
+            //{
+            //    Console.WriteLine($"{item.Key} :: {item.Value}");
+            //}
+            #endregion
+
+            #region HashSet (HashTable)
+            HashSet<int> Numbers = new HashSet<int>();
+            Numbers.Add(1);
+            Numbers.Add(2);
+            Numbers.Add(3);
+            Numbers.Add(1);
+            foreach (int number in Numbers)
             {
-                Console.WriteLine($"{item.Key} :: {item.Value}");
+                Console.WriteLine(number);
             }
             #endregion
         }
