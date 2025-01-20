@@ -77,7 +77,18 @@ namespace Demo
             #endregion
 
             #region SortedDictionary (BST)
-            SortedDictionary<string, int> Note = new SortedDictionary<string, int>();
+            //SortedDictionary<string, int> Note = new SortedDictionary<string, int>();
+            //Note.Add("Mostafa", 456);
+            //Note.Add("omar", 789);
+            //Note.Add("Ahmed", 123);
+            //foreach (var item in Note)
+            //{
+            //    Console.WriteLine($"{item.Key} :: {item.Value}");
+            //}
+            #endregion
+
+            #region SortedList (BST)
+            SortedList<string, int> Note = new SortedList<string, int>();
             Note.Add("Mostafa", 456);
             Note.Add("omar", 789);
             Note.Add("Ahmed", 123);
