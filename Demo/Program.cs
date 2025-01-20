@@ -52,15 +52,27 @@ namespace Demo
             #endregion
 
             #region HashTable
-            Hashtable Note = new Hashtable();
-            Note.Add("Name", "John");
-            Note.Add("Age", 25);
-            Note.Add("City", "New York");
-            if (!Note.ContainsKey("Name"))
-                Note.Add("Name" , "mostafa");
-            foreach (DictionaryEntry item in Note)
+            //Hashtable Note = new Hashtable();
+            //Note.Add("Name", "John");
+            //Note.Add("Age", 25);
+            //Note.Add("City", "New York");
+            //if (!Note.ContainsKey("Name"))
+            //    Note.Add("Name" , "mostafa");
+            //foreach (DictionaryEntry item in Note)
+            //{
+            //    Console.WriteLine(item.Key + " : " + item.Value);
+            //}
+            #endregion
+
+            #region Dictionary (HashTable)
+            Dictionary<string, int> Note = new Dictionary<string, int>();
+            Note.Add("Ahmed", 123);
+            Note.Add("Mostafa", 456);
+            Note.Add("omar", 789);  
+            Note.Add("Ahmed", 038);
+            foreach (KeyValuePair<string, int> item in Note)
             {
-                Console.WriteLine(item.Key + " : " + item.Value);
+                Console.WriteLine($"{item.Key} :: {item.Value}");
             }
             #endregion
         }
