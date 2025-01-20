@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using System.Collections;
+
+namespace Demo
 {
     internal class Program
     {
@@ -35,17 +37,30 @@
             #endregion
 
             #region Queue
-            Queue<int> Numbers = new Queue<int>();
-            Numbers.Enqueue(1);
-            Numbers.Enqueue(2);
-            Numbers.Enqueue(3);
-            Numbers.Dequeue();
-            Numbers.Dequeue();  
-            Numbers.Dequeue();
-            Console.WriteLine(Numbers.TryDequeue(out int result));
-            foreach (int number in Numbers)
+            //Queue<int> Numbers = new Queue<int>();
+            //Numbers.Enqueue(1);
+            //Numbers.Enqueue(2);
+            //Numbers.Enqueue(3);
+            //Numbers.Dequeue();
+            //Numbers.Dequeue();  
+            //Numbers.Dequeue();
+            //Console.WriteLine(Numbers.TryDequeue(out int result));
+            //foreach (int number in Numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+            #endregion
+
+            #region HashTable
+            Hashtable Note = new Hashtable();
+            Note.Add("Name", "John");
+            Note.Add("Age", 25);
+            Note.Add("City", "New York");
+            if (!Note.ContainsKey("Name"))
+                Note.Add("Name" , "mostafa");
+            foreach (DictionaryEntry item in Note)
             {
-                Console.WriteLine(number);
+                Console.WriteLine(item.Key + " : " + item.Value);
             }
             #endregion
         }
