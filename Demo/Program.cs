@@ -99,10 +99,22 @@ namespace Demo
             #endregion
 
             #region HashSet (HashTable)
-            HashSet<int> Numbers = new HashSet<int>();
-            Numbers.Add(1);
+            //HashSet<int> Numbers = new HashSet<int>();
+            //Numbers.Add(1);
+            //Numbers.Add(2);
+            //Numbers.Add(3);
+            //Numbers.Add(1);
+            //foreach (int number in Numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+            #endregion
+
+            #region SortedSet (BST)
+            SortedSet<int> Numbers = new SortedSet<int>();
+            Numbers.Add(12);
             Numbers.Add(2);
-            Numbers.Add(3);
+            Numbers.Add(23);
             Numbers.Add(1);
             foreach (int number in Numbers)
             {
